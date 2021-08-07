@@ -9,3 +9,12 @@ gunicorn
 whitenoise
 PyYAML
 django-mysql
+mysqlclient
+numpy
+torch
+torchvision
+matplotlib
+pillow
+selenium
+requests
+onnxruntime
