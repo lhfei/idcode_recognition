@@ -39,8 +39,8 @@ class IDCodeList(APIView):
             #data = formater.get_target(res=data_all, target_str=idcode['content'])
             data = formater.format(res=data_all, target_str=idcode['content'])
 
-            serializer.validated_data['recognition'] = data_all
-            serializer.save()
+            # serializer.validated_data['recognition'] = data_all
+            # serializer.save()
 
             return Response(data, status=status.HTTP_201_CREATED, content_type='application/json')
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

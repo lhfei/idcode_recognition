@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+admin.site.site_header="ONNX文字识别系统"
+admin.site.site_title="文字识别系统"
 
 urlpatterns = [
     path('admin/', admin.site.urls),

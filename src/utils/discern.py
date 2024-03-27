@@ -1,6 +1,6 @@
 """
 @author: Hefei Li
-@file: operation.py
+@file: discern.py
 @time: 2021/08/02 15:31
 """
 import numpy as np

@@ -87,9 +87,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'idcode_recognition',
-        'USER': 'root',
-        'PASSWORD': 'Lhfeilaile@01',
-        'HOST': '10.170.131.75',
+        'USER': 'ocr_user',
+        'PASSWORD': 'Ocruser_1473',
+        'HOST': 'dlink-daas-11',
         'PORT': '3306',
     }
 }

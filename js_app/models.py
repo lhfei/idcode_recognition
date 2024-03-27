@@ -10,15 +10,17 @@ STYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])
 
 
 class IDCode(models.Model):
-    created = models.DateTimeField(auto_now_add=True)
-    img_url = models.CharField(max_length=512, blank=True, default='')
-    code = models.TextField()
+    created = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
+    img_url = models.CharField(max_length=512, blank=True, default='', verbose_name='图片地址')
+    code = models.TextField(verbose_name='图片Base64编码')
     # content = ListCharField(
     #     base_field = models.CharField(max_length=8, blank=True),
     #     size=3,
     #     max_length = (3 * 12)  # 4 * 12 character nominals, plus commas
     # )
-    content = models.CharField(max_length=128, blank=True, default='')
-    recognition = models.TextField()
+    content = models.CharField(max_length=128, blank=True, default='', verbose_name='识别内容')
+    recognition = models.TextField(verbose_name='识别结果')
 
+    class Meta:
+        verbose_name = "ONNX文字识别接口"
 
